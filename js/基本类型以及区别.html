@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        js中的数据类型分为两种：基本类型和引用类型
+            原始数据：Undefined、Null、Boolean、Number、String、Symbol、BigInt
+            引用类型：object、array、function
+        检测数据类型的方法
+            typeof：检测基本类型。其中数组、对象、null都会返回object
+            instanceof：检测引用类型。其中数组、对象、null都会返回false。判断机制就是在原型连中查找该类型的原型对象
+            constructor：检测引用类型。其中数组、对象、null都会返回Object。判断机制就是查找该类型的构造函数
+            Object.prototype.toString.call()：检测所有类型。返回的是一个字符串，格式为[object 类型]。其中数组、对象、null都会返回[object
+        判断数组类型的方法
+            Array.isArray()：判断是否为数组
+           原型链: obj.prototype = Array.prototype
+            Object.prototype.toString.call()：判断是否为数组
+            Array.prototype.isPrototypeOf()：判断是否为数组
+        简述js中的this
+            this是js中的一个关键字，它是一个指向对象的指针，它的指向是动态的，取决于函数的调用方式
+            1.作为函数调用
+            2.作为方法调用
+            3.作为构造函数调用
+            4.通过call()和apply()调用、bind()绑定 apply绑定两个参数，this和参数数组。call绑定多个参数，this和参数列表。bind绑定this和参数列表，
+        箭头函数与普通函数有什么区别
+            1.箭头函数没有自己的this，它的this是继承自外层作用域的this
+            2.箭头函数没有arguments对象，可以使用rest参数代替
+            3.箭头函数没有原型对象
+            4.箭头函数不能作为构造函数
+            5.箭头函数没有new.target
+        简述js中的闭包
+            闭包是一个函数对象，它的内部函数可以访问外部函数的局部变量
+    </div>
+    <script>
+        <!--            基本类型-->
+
+    </script>
+</body>
+</html>
